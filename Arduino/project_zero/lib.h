@@ -1,0 +1,2 @@
+
+int inc(int value);
