@@ -16,4 +16,13 @@ void loop(){
   c1->inc();
   Serial.println(c1->getValue());
   delay(1000);
+
+  /*
+  Counter* c3 = new Counter(micros());
+  Serial.println(c3->getValue());
+  delete c3;
+
+  Counter c2(10);
+  c2.inc();
+  */  
 }
