@@ -39,6 +39,8 @@ void setup(){
    c1 = new Counter(20);
    c3 = new Counter(30);
 
+   while(!Serial){};
+   
    Serial.println((unsigned long) &a);
    Serial.println((unsigned long) &c);
    Serial.println((unsigned long) &c1);

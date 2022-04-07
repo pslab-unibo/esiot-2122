@@ -2,6 +2,7 @@
  * MODIFIED VERSION for SEIOT a.a. 2021-2022 */
 
 // include the EnableInterrupt library - see the links in the related topics section above for details
+
 #define EI_ARDUINO_INTERRUPTED_PIN // to enable pin states functionality 
 #include <EnableInterrupt.h>
 
@@ -69,6 +70,7 @@ void loop()
       Serial.println("");
     
      }
+     delay(250);
 
  
 }// end of loop

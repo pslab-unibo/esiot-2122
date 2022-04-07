@@ -1,6 +1,8 @@
 class Instrument {
 public:
-  virtual void play() = 0;  
+  void play() {
+     Serial.println("default sound");    
+  }
  
 protected:
   void makeSound(String s){
@@ -10,6 +12,7 @@ protected:
 
 class Percussion: public Instrument {
 public:
+  
   void play(){
     makeSound("toc");
   }  
@@ -31,6 +34,8 @@ void setup(){
 }
 
 void loop(){
+  ((Piano*)list[0])->play();
+  
   for (int i = 0; i < 2; i++){
     list[i]->play();
   }

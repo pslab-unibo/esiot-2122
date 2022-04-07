@@ -21,13 +21,13 @@ public:
 Light* led;
 
 void setup(){
-  // led = new Led(LED_PIN);  
-  led = new FakeLed();  
+  led = new Led(LED_PIN);  
+  // led = new FakeLed();  
 }
 
 void loop(){
   led->switchOn();
-  delay(100);
+  delay(500);
   led->switchOff(); 
-  delay(100);
+  delay(500);
 };
